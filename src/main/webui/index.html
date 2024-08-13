@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Universidad UNE</title>
+</head>
+
+<body>
+<div style="display: flex; padding: 10px 150px;">
+    <img
+            style="height: 60px;"
+            src="/favicon.png"
+            alt="favivon"
+    />
+</div>
+<iframe
+        id="o_bg_video_iframe_2"
+        class="o_bg_video_iframe fade show"
+        style="width:99vw; height: 85vh;"
+        src="//www.youtube.com/embed/moJwusu_FSE?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=moJwusu_FSE&amp;fs=0&amp;modestbranding=1"
+></iframe>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "25fa4795-a710-4159-9881-2401db09def1", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "9397ab7d-00cf-4238-8589-52bd82711e84", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+</script>
+</body>
+</html>
